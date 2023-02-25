@@ -5,7 +5,9 @@
 - linting with [ruff](https://github.com/charliermarsh/ruff)
 - type checking w [mypy](https://mypy.readthedocs.io/en/stable/)
 - test with [pytest](https://docs.pytest.org/)
-- Docs w/ [mkdocs](https://www.mkdocs.org/) and [mkdocs-material](https://squidfunk.github.io/mkdocs-material/)
+- Docs w/ [mkdocs](https://www.mkdocs.org/) 
+    - [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) 
+    - [mkdocs-jupyter](https://github.com/danielfrg/mkdocs-jupyter)
 - Docs hosting with gh pages
 - CI via github actions
 - docker image build
