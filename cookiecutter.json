@@ -1,0 +1,9 @@
+{
+    "project_slug": "app",
+    "authors": "John Doe",
+    "_copy_without_render": [
+        "LICENSE",
+        ".github/workflows/ci.yml",
+        "justfile"
+    ]
+}
