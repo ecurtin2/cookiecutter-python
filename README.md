@@ -12,3 +12,10 @@
 - [vscode devcontainer](https://code.visualstudio.com/docs/devcontainers/containers)
 - [github codespaces](https://github.com/features/codespaces) compatible
 - command running with [just](https://github.com/casey/just)
+
+
+# Users
+
+If you use this cookiecutter, add yourself here :)
+
+- https://github.com/ecurtin2/dagster_delta
