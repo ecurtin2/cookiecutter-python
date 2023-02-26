@@ -49,12 +49,13 @@ jobs:
         shell: bash
         run: docker compose run --entrypoint=just dev ci
 
-      - name: Push Image
-        shell: bash
-        if: "startsWith(github.ref, 'refs/tags/')"
-        run: docker compose push
+      # Need to set tag in docker-compose.yaml and uncomment to get image build
+      # - name: Push Image
+      #   shell: bash
+      #   if: "startsWith(github.ref, 'refs/tags/')"
+      #   run: docker compose push
 
       - name: Deploy Documentation
         shell: bash
         if: "startsWith(github.ref, 'refs/tags/')"
-        run: docker compose run --entrypoint=mkdocs dev deploy
+        run: docker compose run --entrypoint=mkdocs dev gh-deploy
