@@ -1,3 +1,6 @@
+[tool.pytest.ini_options]
+addopts = "-v"
+
 [tool.poetry]
 name = "{{ cookiecutter.project_slug }}"
 version = "0.0.1"
