@@ -65,3 +65,4 @@ just --list
 If you use this cookiecutter, add yourself here :)
 
 - https://github.com/ecurtin2/dagster_delta
+- https://github.com/ecurtin2/algove
