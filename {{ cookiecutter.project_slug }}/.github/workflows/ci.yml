@@ -43,7 +43,9 @@ jobs:
       
       - name: Build Image
         shell: bash
-        run: docker compose build dev
+        run: |
+          docker buildx create --use
+          bash .github/compose.sh build dev
 
       - name: Run Checks
         shell: bash
@@ -66,4 +68,4 @@ jobs:
       - name: Deploy Documentation
         shell: bash
         if: "startsWith(github.ref, 'refs/tags/')"
-        run: bash .github/compose.sh run dev mkdocs gh-deploy
+        run: bash .github/compose.sh run dev mkdocs gh-deploy --force -v
